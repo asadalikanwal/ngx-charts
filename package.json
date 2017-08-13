@@ -2,16 +2,24 @@
   "name": "blog",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "app.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
+  },
+  "engines": {
+    "node": "~6.10.3",
+    "npm": "~3.10.5"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.2.1",
+    "@angular/compiler-cli": "^4.0.0",
     "@angular/animations": "^4.3.4",
     "@angular/cdk": "^2.0.0-beta.8",
     "@angular/common": "^4.0.0",
@@ -26,12 +34,11 @@
     "@swimlane/ngx-charts": "^6.0.1",
     "core-js": "^2.4.1",
     "d3": "^4.10.0",
+    "express": "^4.15.4",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.2.1",
-    "@angular/compiler-cli": "^4.0.0",
     "@angular/language-service": "^4.0.0",
     "@types/d3": "^4.10.0",
     "@types/jasmine": "~2.5.53",
