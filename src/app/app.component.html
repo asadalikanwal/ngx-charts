@@ -1,0 +1,54 @@
+<md-card class="charts" fxFlex.gt-sm="28%">
+
+  <md-card-header fxLayout="column">
+
+    <div  fxFlex="100%" fxLayout="column" fxLayoutAlign=" stretch" fxLayoutGap= "10px" >
+      <md-card-title fxFlex="100%">Google Inc</md-card-title>
+      <md-card-subtitle fxFlex="100%">NASDAQ: GOOG</md-card-subtitle>
+    </div>
+
+    <div fxFlex="100%"  fxLayout="row" fxLayoutAlign="space-between" class="charts--price-wrap">
+      <div class="chart--price" >540.48</div>
+      <div class="chart--perc increase" fxFlexAlign="end">2.29 (2.05%)</div>
+    </div>
+
+  </md-card-header>
+
+
+  <md-card-content fxLayout="column wrap" >
+      <md-card-title>Top western road trips</md-card-title>
+      <div class="charts-desc">1,000 miles of wonder</div>
+        <md-card-actions fxLayout="row" fxLayoutAlign="space-between">
+          <div fxFlexAlign="start">
+            <button md-button>SHARE</button>
+            <button md-button class="explore">EXPLORE</button>
+          </div>
+           <button md-mini-fab fxFlexAlign="end" (click)="toggleChart()" ><i class="arrow up " [ngClass]="{'down': lineChart }" ></i></button>
+        </md-card-actions>
+
+        <div *ngIf="lineChart" [@enterAnimation]>
+
+           <ngx-charts-line-chart
+            [view]="view"
+            [scheme]="colorScheme"
+            [results]="single"
+            [gradient]="gradient"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [legend]="showLegend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel"
+            [autoScale]="autoScale"
+            (select)="onSelect($event)">
+        </ngx-charts-line-chart>
+        </div>
+
+
+
+
+  </md-card-content>
+
+
+</md-card>

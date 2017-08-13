@@ -1,0 +1,86 @@
+.charts  {
+  max-width: 300px;
+  padding: 0;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2),
+  0 2px 2px 0 rgba(0, 0, 0, .14),
+  0 1px 5px 0 rgba(0, 0, 0, .12);
+
+}
+
+.charts md-card-header {
+  background: #0099F7;
+  color: #fff;
+  padding: 10px;
+}
+
+.charts md-card-header md-card-title{
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.charts md-card-header md-card-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+.charts .charts--price-wrap {
+  margin-top: 20px;
+}
+
+.charts .chart--price {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.chart--perc {
+  font-size: 14px;
+}
+
+.increase {
+  position: relative;
+}
+
+.increase:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE3Ny4zOTkgMTc3LjM5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTc3LjM5OSAxNzcuMzk5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxwYXRoIGQ9Ik03My42OTgsMTc3LjM5OWwwLjAwMS0xMDcuNDAxTDI5Ljc4Nyw3MEw4OC42OTksMGw1OC45MTQsNjkuOTk3bC00My45MTQsMC4wMDFsLTAuMDAxLDEwNy40MDFINzMuNjk4eiIgZmlsbD0iI0ZGRkZGRiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+    background-repeat: no-repeat;
+    margin-left: -17px;
+    position: absolute;
+}
+
+.charts md-card-content{
+  padding: 10px;
+}
+
+.charts md-card-content md-card-title { font-size: 25px; margin-bottom: 2px;}
+.charts md-card-content .charts-desc { font-size: initial; color: #9A9A9A;}
+
+.charts md-card-content button {
+  background: transparent;
+  font-size: 14px;
+  min-width: auto;
+  padding: 0 10px;
+}
+
+.charts md-card-content button.explore {
+  color: #7745BF;
+}
+
+
+.charts md-card-content  md-card-actions { margin-top: 15px;}
+
+.charts md-card-content md-card-actions .mat-mini-fab {
+  background: #DBDBDB !important;
+  box-shadow: none;
+}
+
+  .charts .ngx-charts g.tick text{
+  transform: rotate(0deg);
+}
+
+
+
+
+
+
