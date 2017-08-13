@@ -14,4 +14,4 @@ const port = process.env.PORT || '3001';
 app.set('port', port);
 
 const server = http.createServer(app);
-server.listen(port, () => console.log('Runnung'));
+server.listen(port, () => console.log('Runnung http://localhost:3001'));
